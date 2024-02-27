@@ -1,0 +1,21 @@
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.columns > .article {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #333;
+  width: 20%;
+}
+
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+  }
+  .columns > .article {
+    width: 100%;
+  }
+}
